@@ -19,7 +19,7 @@
    - **Setup:** Allocates stack space with `LINK A6,#-12` and preserves registers using `MOVEM.L`.  
    - **Local Variables:**  
      - Stored in offsets from the stack frame pointer `A6`. For example:
-       - `-4(A6)` and `-8(A6)` likely represent the real and imaginary parts of the current point.  
+       - `-4(A6)` and `-8(A6)` represent the real and imaginary parts of the current point.  
 
 3. **Iterative Loop (Loop Label):**
    - Executes the Mandelbrot iteration formula \( Z_{n+1} = Z_n^2 + C \), where \( Z \) and \( C \) are complex numbers:
